@@ -10,7 +10,7 @@ pub struct Lexer {
 }
 
 impl Lexer {
-    fn new(input: String) -> Self {
+    pub fn new(input: String) -> Self {
         let mut l = Lexer {
             chars: input.chars().collect(),
             _raw_input: input,
@@ -20,7 +20,7 @@ impl Lexer {
         l
     }
 
-    fn next_token(&mut self) -> Option<Token> {
+    pub fn next_token(&mut self) -> Option<Token> {
         self.skip_whitespace();
         let ch = self.char?;
         let mut token = Token {
