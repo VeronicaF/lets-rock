@@ -12,6 +12,8 @@ tracing = "0.1"
 dashmap = "5.4"
 thiserror = "1.0"
 http = "0.2"
+sled = "0.34"
+tempfile = "3.3.0"
 
 [dev-dependencies]
 anyhow = "1"
