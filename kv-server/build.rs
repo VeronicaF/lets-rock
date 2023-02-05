@@ -6,4 +6,6 @@ fn main() {
         .out_dir("src/pb")
         .compile_protos(&["abi.proto"], &["."])
         .unwrap();
+    println!("cargo:rerun-if-changed=build.rs");
+    println!("cargo:rerun-if-changed=abi.proto");
 }
