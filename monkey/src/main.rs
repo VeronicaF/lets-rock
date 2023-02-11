@@ -2,9 +2,11 @@
 #![feature(let_chains)]
 #![feature(is_some_and)]
 
+mod ast;
 pub mod lexer;
 pub mod repl;
 pub mod token;
+mod parser;
 
 fn main() {
     let user = whoami::username();

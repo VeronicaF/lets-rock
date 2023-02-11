@@ -1,11 +1,11 @@
 use crate::lexer::Lexer;
 use std::io;
-use std::io::{Read, Write};
+use std::io::Write;
 
 const PROMPT: &[u8; 3] = b">> ";
 
 pub fn start() -> ! {
-    let mut stdin = io::stdin();
+    let stdin = io::stdin();
     let mut stdout = io::stdout();
 
     loop {

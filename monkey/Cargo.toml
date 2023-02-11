@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 lazy_static = "1.4.0"
+strum_macros = "0.24.3"
 whoami = "1.2.3"
